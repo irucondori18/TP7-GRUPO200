@@ -30,18 +30,18 @@ public class Principal1 {
 				Alumno alumno = new Alumno(); 
 				System.out.println("Ingrese dni: ");
 				long dniIngresado = sc.nextLong();
-//				se controla si existe el alumno
-				boolean bander=false;
-				for(Alumno alum: alumnos) {
-					if(alum.getDni()==dniIngresado) {
-						bander=true;
-						sout
-					}
-				}
-				if(bander==true) {
-					System.out.println("\nEl alumno ya existe!");
-				}
-				else {
+				System.out.println("prueba");
+////				se controla si existe el alumno
+//				boolean bander=false;
+//				for(Alumno alum: alumnos) {
+//					if(alum.getDni()==dniIngresado) {
+//						bander=true;
+//					}
+//				}
+//				if(bander==true) {
+//					System.out.println("\nEl alumno ya existe!");
+//				}
+//				else {
 					System.out.println("Ingrese nombre: ");
 					alumno.setNombre(sc.next());
 					System.out.println("Ingrese apellido: ");
@@ -58,7 +58,7 @@ public class Principal1 {
 					alumno.setCurso(sc.next());
 					alumnos.add(alumno);
 					System.out.println("Alumno agregado con éxito!");
-				}
+//				}
 
 				break;
 			case 2:
